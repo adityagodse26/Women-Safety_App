@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ic_baseline_more_vert_24"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="PopupMenu" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/textNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="SOS Will Be Sent To:"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/textNum"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#ffffff"
+            android:onClick="startServiceV"
+            android:text="Start"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="NotSibling" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stop"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/start"
+            android:backgroundTint="#ffffff"
+            android:onClick="stopService"
+            android:text="stop"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/start" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emergency_button"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/stop"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#ffffff"
+            android:onClick="showEmergencyNumbers"
+            android:text="Helpline Numbers"
+            android:textColor="@color/black"
+            app:cornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/start" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="550dp"
+        android:gravity="center"
+        android:text="NOTE: Turn off the service if its not in use"
+        android:textColor="@color/white"
+        android:textSize="19dp" />
+
+</RelativeLayout>

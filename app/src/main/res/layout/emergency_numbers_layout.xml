@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/backgroundimage"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <Button
+        android:id="@+id/police_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#ffffff"
+        android:text="Police helpline: 100"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        app:cornerRadius="10dp"
+        android:layout_marginTop="170dp"/>
+
+    <Button
+        android:id="@+id/womenhelpline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#ffffff"
+        android:text="women helpline: 1091"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="10dp"/>
+
+    <Button
+        android:id="@+id/fire_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#ffffff"
+        android:text="Fire helpline: 101"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="10dp"/>
+
+    <Button
+        android:id="@+id/ambulance_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#ffffff"
+        android:text="Ambulance helpline: 108"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="10dp"/>
+
+    <Button
+        android:id="@+id/women_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:text="Women helpline(domestic abuse): 181"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        app:cornerRadius="10dp"/>
+
+</LinearLayout>
